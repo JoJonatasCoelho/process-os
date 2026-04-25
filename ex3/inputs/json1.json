@@ -1,0 +1,23 @@
+{
+  "specversion": "1.0",
+  "challengeid": "vetroomprotocoldemo",
+  "metadata": {
+    "room count": 1,
+    "allowed states": ["EMPTY", "DOGS", "CATS"],
+    "sign change latency": 0,
+    "tiebreaker": ["arrival time", "id"]
+  },
+"room": {
+    "initial sign state": "EMPTY"
+},
+  "workload": {
+    "time unit": "ticks",
+    "animals": [
+      { "id": "D01", "species": "DOG", "arrival time": 0, "rest duration": 5 },
+      { "id": "C01", "species": "CAT", "arrival time": 1, "rest duration": 4 },
+      { "id": "D02", "species": "DOG", "arrival time": 2, "rest duration": 6 },
+      { "id": "C02", "species": "CAT", "arrival time": 3, "rest duration": 2 },
+      { "id": "D03", "species": "DOG", "arrival time": 4, "rest duration": 3 }
+    ]
+  }
+}
